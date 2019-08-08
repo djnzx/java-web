@@ -7,14 +7,19 @@ public class DbConnection {
     private final static String USER_NAME = "postgres";
     private final static String USER_PASS = "secret";
 
+    private static Connection connection = null;
+
+    private DbConnection() {}
+
     static Connection getConnection() {
-        Connection conection = null;
-        try {
-            conection = DriverManager.getConnection(DB_URL, USER_NAME, USER_PASS);
-        } catch (SQLException e) {
-            e.printStackTrace();
+        if (connection == null) {
+            try {
+                connection = DriverManager.getConnection(DB_URL, USER_NAME, USER_PASS);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
-        return conection;
+        return connection;
     }
 
 }
