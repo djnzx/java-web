@@ -6,24 +6,25 @@ import java.sql.SQLException;
 public class App {
     public static void main(String[] args) throws SQLException {
         // connection to our database
-        Connection conn = DbConnection.getConnection();
+        Connection conn = new DbConnection2().get();
+//        Connection conn = DbConnection.getConnection();
 
         // select sql
-        String SQL_I = "INSERT INTO message (id, sender, content) VALUES (?, ?, ?)";
+//        String SQL_I = "INSERT INTO message (id, sender, content) VALUES (?, ?, ?)";
         // statement
-        PreparedStatement stmti = conn.prepareStatement(SQL_I);
+        PreparedStatement stmti = conn.prepareStatement(SQLConsts.SQLI);
         // setting data
         stmti.setInt(1, 7);
         stmti.setString(2, "Alexr");
-        stmti.setString(3, "Hello, World!");
+        stmti.setString(3, "Hello World!");
         // running
         stmti.execute();
 
 
         // select sql
-        String SQL_S = "SELECT * FROM message";
+//        String SQL_S = "SELECT * FROM message";
         // statement
-        PreparedStatement stmt = conn.prepareStatement(SQL_S);
+        PreparedStatement stmt = conn.prepareStatement(SQLConsts.SQLS);
         // running
         ResultSet rset = stmt.executeQuery();
         // processing data
