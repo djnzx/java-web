@@ -9,8 +9,13 @@ public class AppTransaction {
         connection.setAutoCommit(false);
 
         // commit / rollback
-        connection.commit();
-        connection.rollback();
+        try {
+            // ...
+            connection.commit();
+        } catch (SQLException e) {
+            connection.rollback();
+        }
+
 
         // set different transaction isolation levels
         connection.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
