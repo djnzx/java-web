@@ -10,7 +10,12 @@ public class AppTransaction {
 
         // commit / rollback
         try {
-            // ...
+            // insert
+            // insert
+//            throw new SQLException();
+            // insert
+            // insert
+
             connection.commit();
         } catch (SQLException e) {
             connection.rollback();
