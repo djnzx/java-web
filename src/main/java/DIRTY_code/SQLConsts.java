@@ -1,3 +1,5 @@
+package DIRTY_code;
+
 public class SQLConsts {
     /**
      * 1. Int - User id

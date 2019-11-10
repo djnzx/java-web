@@ -1,3 +1,5 @@
+package DIRTY_code;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -7,7 +9,7 @@ public class App {
     public static void main(String[] args) throws SQLException {
         // connection to our database
         Connection conn = new DbConnection2().get();
-//        Connection conn = DbConnection.getConnection();
+//        Connection conn = DIRTY_code.DbConnection.getConnection();
 
         // select sql
 //        String SQL_I = "INSERT INTO message (id, sender, content) VALUES (?, ?, ?)";
