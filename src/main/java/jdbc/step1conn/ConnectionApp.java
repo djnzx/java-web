@@ -1,4 +1,4 @@
-package jdbc.conn;
+package jdbc.step1conn;
 
 import java.sql.Connection;
 
