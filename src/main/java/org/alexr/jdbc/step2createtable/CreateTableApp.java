@@ -1,6 +1,6 @@
-package jdbc.step2createtable;
+package org.alexr.jdbc.step2createtable;
 
-import jdbc.step1conn.DbConnection;
+import org.alexr.jdbc.step1conn.DbConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

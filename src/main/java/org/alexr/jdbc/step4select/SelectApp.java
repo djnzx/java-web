@@ -1,6 +1,6 @@
-package jdbc.step4select;
+package org.alexr.jdbc.step4select;
 
-import jdbc.step1conn.DbConnection;
+import org.alexr.jdbc.step1conn.DbConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

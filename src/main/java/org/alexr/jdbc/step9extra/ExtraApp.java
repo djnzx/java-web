@@ -1,6 +1,6 @@
-package jdbc.step9extra;
+package org.alexr.jdbc.step9extra;
 
-import jdbc.step1conn.DbConnection;
+import org.alexr.jdbc.step1conn.DbConnection;
 
 import java.sql.Connection;
 import java.sql.SQLException;

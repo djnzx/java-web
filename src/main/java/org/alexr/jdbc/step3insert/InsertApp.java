@@ -1,6 +1,6 @@
-package jdbc.step3insert;
+package org.alexr.jdbc.step3insert;
 
-import jdbc.step1conn.DbConnection;
+import org.alexr.jdbc.step1conn.DbConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

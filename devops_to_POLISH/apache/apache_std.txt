@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+	ServerName www.avtomir.kiev.ua
+	ServerAlias avtomir.kiev.ua
+	DocumentRoot /var/www/www.avtomir.kiev.ua
+	ErrorLog /var/log/httpd/www.avtomir.kiev.ua_error.log
+	CustomLog /var/log/httpd/www.avtomir.kiev.ua_requests.log combined
+</VirtualHost>

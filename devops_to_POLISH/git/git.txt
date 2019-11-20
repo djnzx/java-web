@@ -1,0 +1,11 @@
+git clone ....git -> gives error
+generate ssh-rsa key
+1. ssh-keygen
+2. take key ./ssh/id_rsa.pub
+3. put it to
+https://github.com/alexr007/jetty-org.alexr.web-server/settings/keys
+https://github.com/alexr007/jetty-org.alexr.web-server/settings/keys/new
+4. and use ssh to clone
+git clone git@github.com:alexr007/jetty-org.alexr.web-server.git
+and use own passphrase, which you enter at the key generating moment
+5. done

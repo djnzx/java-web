@@ -1,0 +1,3 @@
+service httpd start
+service httpd stop
+service httpd restart

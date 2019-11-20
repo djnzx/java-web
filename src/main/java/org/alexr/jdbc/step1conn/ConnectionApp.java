@@ -1,4 +1,4 @@
-package jdbc.step1conn;
+package org.alexr.jdbc.step1conn;
 
 import java.sql.Connection;
 

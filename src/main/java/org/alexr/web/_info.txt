@@ -1,0 +1,4 @@
+Servlet API
+
+1. minimal configuration for building and running application from console
+2. minimal application structure
