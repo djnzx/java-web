@@ -1,0 +1,2 @@
+https://www.ibm.com/developerworks/ru/library/j-jtp09238/index.html
+https://www.eclipse.org/jetty/documentation/9.4.12.v20180830/

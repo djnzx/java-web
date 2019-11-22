@@ -1,4 +1,10 @@
-Servlet API
-
-1. minimal configuration for building and running application from console
+1. Servlet API
 2. minimal application structure
+3. POM.XML minimal configuration for building and running application from console
+4. Logger
+5. Template Engine (FreeMarker)
+6. Redirect
+7. File downloading
+8. Request API, Parameters handling, path parsing
+9. Simple Authorisation
+10. Dependency injection (via Servlet constructor)
