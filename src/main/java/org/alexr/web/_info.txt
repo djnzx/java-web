@@ -8,3 +8,5 @@
 8. Request API, Parameters handling, path parsing
 9. Simple Authorisation
 10. Dependency injection (via Servlet constructor)
+11. Cookies
+12. Jackson JSON, XML

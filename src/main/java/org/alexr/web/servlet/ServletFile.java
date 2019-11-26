@@ -18,7 +18,6 @@ public class ServletFile extends HttpServlet {
      * req.getPathInfo() - /index.html
      */
     String gotPathInfo = req.getPathInfo();
-    System.out.printf("_%s_\n", gotPathInfo);
     Path path = Paths.get("./content", gotPathInfo);
     ServletOutputStream os = resp.getOutputStream();
     Files.copy(path, os);
