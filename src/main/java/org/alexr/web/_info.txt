@@ -1,4 +1,4 @@
-1. Aapplication structure
+1. Application structure
    - server
    - context handler
    - holder
@@ -20,7 +20,10 @@
 6. Dependency injection
    - via Servlet constructor
 7. Cookies
-   - Simple Authorisation
+   - max age
+   - simple authorisation
+   - path
+   - http only
 8. Session
 9. Filters
 10. Logging

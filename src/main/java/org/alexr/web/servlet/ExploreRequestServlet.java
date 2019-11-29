@@ -37,12 +37,27 @@ public class ExploreRequestServlet extends HttpServlet {
       for (String s: xes) {
         w.printf("x=%s\n", s);
       }
-      w.printf("pathinfo: %s\n", pathInfo);
-      w.printf("queryString: %s\n", queryString);
-      w.printf("contextPath: %s\n", contextPath);
-      w.printf("servletPath: %s\n", servletPath);
-      w.printf("requestURL: %s\n", requestURL);
-      w.printf("requestURI: %s\n", requestURI);
+      w.printf("getProtocol:%s\ngetServerName:%s\ngetServerPort%s\n" +
+              "getServletPath:%s\ngetContextPath: %s\n" +
+              "getPathInfo:%s\ngetQueryString:%s\n" +
+              "getRequestURL:%s\ngetRequestURI:%s\n" +
+              "%s",
+          req.getProtocol(),    //  HTTP/1.1
+          req.getServerName(),  //  localhost
+          req.getServerPort(),  //  9001
+
+          req.getServletPath(), //  /a
+          req.getContextPath(), //  EMPTY
+
+          req.getPathInfo(),    //  /1/2/3/4/5 - all between servlet mapping "/a" and parameters or NULL
+          req.getQueryString(), //  x=5&y=+++ or NULL
+
+          req.getRequestURL(),  //  http://localhost:9001/a/1/2/3/4/5
+          req.getRequestURI(),  //  /a/1/2/3/4/5
+          ""
+      );
     }
+
+
   }
 }
