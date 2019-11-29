@@ -11,6 +11,9 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class TemplateApp03 {
   public static void main(String[] args) throws Exception {
     TemplateEngine engine = TemplateEngine.folder("./content/template");
+    // similar way
+    // but it won't compile because of private constructor
+//    TemplateEngine engine2 = new TemplateEngine("./content/template");
 
     ServletContextHandler handler = new ServletContextHandler();
     handler.addServlet(new ServletHolder(new FreemarkerServlet03(engine)), "/fm3/*");

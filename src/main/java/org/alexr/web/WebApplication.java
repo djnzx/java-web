@@ -20,7 +20,7 @@ public class WebApplication {
     Auth authService = new AuthService();
     handler.addServlet(new ServletHolder(new LoginServlet(authService)), "/login/*");
 
-    TemplateEngine te = new TemplateEngine("./content/templates");
+    TemplateEngine te = TemplateEngine.folder("./content/templates");
     handler.addServlet(new ServletHolder(new TemplateServlet(te)), "/te/*");
 
     server.setHandler(handler);

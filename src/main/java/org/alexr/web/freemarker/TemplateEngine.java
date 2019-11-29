@@ -28,7 +28,7 @@ public final class TemplateEngine {
     return new TemplateEngine(path);
   }
 
-  public TemplateEngine(final String path) throws IOException {
+  private TemplateEngine(final String path) throws IOException {
     this.config = new Configuration(Configuration.VERSION_2_3_28) {{
       setDirectoryForTemplateLoading(new File(path));
       setDefaultEncoding(String.valueOf(StandardCharsets.UTF_8));
