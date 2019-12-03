@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     // folder/file
-    Path path = Paths.get("./content/login.html");
+    Path path = Paths.get("./content/login.ftl");
     ServletOutputStream os = resp.getOutputStream();
     Files.copy(path, os);
   }

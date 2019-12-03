@@ -1,0 +1,4 @@
+This is the same project as the `navi`,
++ it contains GET/POST
++ authorization with cookies
++ it handles static content (css, images, ...) located in the folder `content_navi2`

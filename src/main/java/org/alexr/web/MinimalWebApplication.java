@@ -16,7 +16,7 @@ public class MinimalWebApplication {
     handler.addServlet(HelloServlet.class, "/*");
 
     server.setHandler(handler);
-    server.start();;
+    server.start();
     server.join();
   }
 }
