@@ -2,6 +2,8 @@ package org.alexr.web.navi2;
 
 import org.alexr.web.freemarker.TemplateEngine;
 import org.alexr.web.navi2.servlet.*;
+import org.alexr.web.service.Auth;
+import org.alexr.web.service.AuthService;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -11,6 +13,8 @@ import org.eclipse.jetty.servlet.ServletHolder;
  */
 public class Navi2App {
   public static void main(String[] args) throws Exception {
+    Auth auth = new AuthService();
+
     TemplateEngine te = TemplateEngine.folder("./content_navi2/template");
     ServletContextHandler handler = new ServletContextHandler();
 
@@ -18,7 +22,7 @@ public class Navi2App {
     handler.addServlet((new ServletHolder(new SvtStaticContent("./content_navi2"))), "/static/*");
 
     // login/logout operations
-    handler.addServlet((new ServletHolder(new SvtLogin(te))), "/login/*");
+    handler.addServlet((new ServletHolder(new SvtLogin(te, auth))), "/login/*");
     handler.addServlet((new ServletHolder(new SvtLogout(te))), "/logout/*");
 
     // menu / calc / history
