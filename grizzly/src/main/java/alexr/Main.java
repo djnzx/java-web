@@ -8,13 +8,13 @@ import java.io.IOException;
 import java.net.URI;
 
 /**
- * http://localhost:8080/myapp/root/next
- * http://localhost:8080/myapp/root/p
- * http://localhost:8080/myapp/root/next
+ * http://localhost:8081/myapp/root/next
+ * http://localhost:8081/myapp/root/p
+ * http://localhost:8081/myapp/root/next
  */
 
 public class Main {
-    public static final String BASE_URI = "http://localhost:8080/myapp/";
+    public static final String BASE_URI = "http://localhost:8081/myapp/";
 
     public static void main(String[] args) throws IOException {
         final ResourceConfig rc = new ResourceConfig().packages("alexr");
